@@ -1,2 +1,2 @@
-const doc = document.querySelector
+const doc = document.     querySelector
 
