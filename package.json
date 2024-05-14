@@ -43,7 +43,7 @@
     "html-validate": "^7.8.0",
     "postcss-clean": "1.2.0",
     "postcss-less": "^6.0.0",
-    "prettier": "2.7.1",
+    "prettier": "^2.7.1",
     "rollup": "^3.2.5",
     "stylelint": "^14.14.1",
     "stylelint-config-prettier": "^9.0.3",
@@ -52,6 +52,14 @@
   },
   "dependencies": {
     "core-js": "^3.26.0"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "bracketSpacing": true,
+    "arrowParens": "always"
   },
   "description": "",
   "version": "1.0.0",
