@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "scripts": {
-    "start": "node index.js",
+    "start": "node C:./portfolio/src",
     "clean": "gulp clean",
     "dev": "cross-env NODE_ENV=development gulp",
     "build": "cross-env NODE_ENV=production gulp",
@@ -12,7 +12,9 @@
     "fix:css": "stylelint --fix 'src/**/*.scss'",
     "lint:js": "eslint 'src/**/*.js'",
     "fix:js": "eslint --fix 'src/**/*.js'",
-    "lint:html": "html-validate 'src/**/*.html'"
+    "lint:html": "html-validate 'src/**/*.html'",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "devDependencies": {
     "@babel/core": "^7.20.2",
@@ -27,6 +29,7 @@
     "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "gh-pages": "^6.1.1",
     "gulp": "^4.0.2",
     "gulp-eslint-new": "^1.7.0",
     "gulp-file-include": "^2.3.0",
@@ -61,7 +64,6 @@
     "bracketSpacing": true,
     "arrowParens": "always"
   },
-  "description": "",
   "version": "1.0.0",
   "main": "index.js",
   "repository": {
@@ -73,5 +75,6 @@
   "bugs": {
     "url": "https://github.com/gayunn/portfolio/issues"
   },
-  "homepage": "https://github.com/gayunn/portfolio#readme"
+  "homepage": "https://github.com/gayunn/portfolio#readme",
+  "description": ""
 }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro</title>
+    <link rel="stylesheet" href="./style/scss/style.css" />
+  </head>
+  <body>
+    <!-- pretendard -->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: 'ufg5zez',
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive';
+          }, config.scriptTimeout),
+          tk = d.createElement('script'),
+          f = false,
+          s = d.getElementsByTagName('script')[0],
+          a;
+        h.className += ' wf-loading';
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != 'complete' && a != 'loaded')) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <div class="gayun-k">
+      <section class="intro-list">
+        <div class="messages">
+          <div class="bubble left">
+            <span class="message">Hi, Welecome 👋</span>
+          </div>
+          <div class="bubble left">
+            <span class="message">I'm GayunKim</span>
+          </div>
+          <div class="bubble left">
+            <span class="message">How art you today?</span>
+          </div>
+          <div class="bubble left">
+            <span class="message">is it okay? i hope you have a good day</span>
+          </div>
+          <div class="bubble left"><span class="message">Bye Bye~</span></div>
+        </div>
+      </section>
+      <section class="work-intro"></section>
+      <section class="working">
+        <ul class="working-list">
+          <li class="working-liss__item">
+            <span class="title"> </span>
+          </li>
+        </ul>
+      </section>
+      <section class="work-timeline"></section>
+      <section class="work-contect"></section>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
