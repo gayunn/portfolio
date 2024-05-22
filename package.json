@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "scripts": {
-    "start": "node C:./portfolio/src",
+    "start": "npm run dev",
     "clean": "gulp clean",
     "dev": "cross-env NODE_ENV=development gulp",
     "build": "cross-env NODE_ENV=production gulp",
@@ -31,6 +31,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "gh-pages": "^6.1.1",
     "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
     "gulp-eslint-new": "^1.7.0",
     "gulp-file-include": "^2.3.0",
     "gulp-if": "^3.0.0",
