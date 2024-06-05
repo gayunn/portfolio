@@ -1,77 +1,11 @@
 {
-  "name": "portfolio",
-  "private": true,
-  "scripts": {
-    "start": "node index.js",
-    "clean": "gulp clean",
-    "dev": "cross-env NODE_ENV=development gulp",
-    "build": "cross-env NODE_ENV=production gulp",
-    "format:check": "prettier --ignore-unknown --check .",
-    "format": "prettier --write --ignore-unknown .",
-    "lint:css": "stylelint 'src/**/*.scss'",
-    "fix:css": "stylelint --fix 'src/**/*.scss'",
-    "lint:js": "eslint 'src/**/*.js'",
-    "fix:js": "eslint --fix 'src/**/*.js'",
-    "lint:html": "html-validate 'src/**/*.html'"
-  },
   "devDependencies": {
-    "@babel/core": "^7.20.2",
-    "@babel/preset-env": "^7.20.2",
-    "@rollup/plugin-babel": "^6.0.2",
-    "@rollup/plugin-commonjs": "^23.0.2",
-    "@rollup/plugin-node-resolve": "^15.0.1",
-    "autoprefixer": "^10.4.13",
-    "browser-sync": "^3.0.2",
-    "cross-env": "^7.0.3",
-    "del": "^7.0.0",
-    "eslint": "^8.27.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "gulp": "^4.0.2",
-    "gulp-eslint-new": "^1.7.0",
-    "gulp-file-include": "^2.3.0",
-    "gulp-if": "^3.0.0",
-    "gulp-inline-source-html": "^1.0.3",
-    "gulp-less": "^5.0.0",
-    "gulp-load-plugins": "^2.0.8",
-    "gulp-newer": "^1.4.0",
-    "gulp-plumber-notifier": "^0.1.0",
-    "gulp-postcss": "^9.0.1",
-    "gulp-replace": "^1.1.3",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-terser": "^2.1.0",
-    "html-validate": "^7.8.0",
-    "postcss-clean": "1.2.0",
-    "postcss-less": "^6.0.0",
-    "prettier": "^2.7.1",
-    "rollup": "^3.2.5",
-    "stylelint": "^14.14.1",
-    "stylelint-config-prettier": "^9.0.3",
-    "terser": "^5.15.1",
-    "through2": "^4.0.2"
+    "babel-eslint": "^10.1.0",
+    "eslint": "^9.3.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "3.2.5"
   },
   "dependencies": {
-    "core-js": "^3.26.0"
-  },
-  "prettier": {
-    "tabWidth": 2,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "all",
-    "bracketSpacing": true,
-    "arrowParens": "always"
-  },
-  "description": "",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gayunn/portfolio.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gayunn/portfolio/issues"
-  },
-  "homepage": "https://github.com/gayunn/portfolio#readme"
+    "sass": "^1.77.4"
+  }
 }
