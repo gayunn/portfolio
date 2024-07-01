@@ -1,6 +1,6 @@
 <template>
   <div>
-    <router-view />
+      <h1>Home Page</h1>
   </div>
 </template>
 
@@ -8,5 +8,5 @@
 export default {}
 </script>
 
-<style>
+<style >
 </style>
