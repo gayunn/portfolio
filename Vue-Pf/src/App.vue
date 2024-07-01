@@ -1,30 +1,26 @@
 <!-- 나의 메인 페이지 -->
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-    Hi
+  <!-- template 내 태그를 div로 한번 묶어준다. -->
+  <div class="section-pf">
+    <section class="main">
+      <div class="header"></div>
+      <div class="contents"></div>
+    </section>
   </div>
 </template>
-<div>Hello world</div>
-<script>
-import HelloWorld from './components/HelloWorld.vue';
 
+<!-- js -->
+<script>
 export default {
-  name: 'App',
-  components: {
-    HelloWorld,
+  name: 'app',
+  data() {
+    return {
+      price1: 60,
+      price2: 100,
+    };
   },
 };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<!-- style -->
+<style></style>
