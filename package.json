@@ -1,5 +1,15 @@
 {
+"name": "portfolio",
+  "private": true,
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "format": "prettier --ignore-unknown --write .",
+    "clean": "del-cli --force dist"
+  },
+
   "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^9.3.0",
     "eslint-config-prettier": "^9.1.0",
